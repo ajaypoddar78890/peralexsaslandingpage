@@ -11,3 +11,9 @@
 body {
   font-family: var(--font-montserrat);
 }
+.Hero-section {
+  background-image: url("ai.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

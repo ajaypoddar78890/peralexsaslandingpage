@@ -8,10 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        bannerimg: "url('bg.png)",
+      },
       colors: {
-        background: "var(--background)",
+        background: "",
         foreground: "var(--foreground)",
       },
+    
     },
   },
   plugins: [],

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-white w-full z-50 shadow">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-3xl font-bold text-blue-600">AJDev</div>
+        <div className="text-3xl font-bold text-blue-600">MoreDev</div>
 
         <nav className="hidden md:flex space-x-6 text-xl">
           <Link href="#home" className="text-gray-600 hover:text-blue-600">
@@ -20,11 +20,11 @@ const Header = () => {
           <Link href="#contact" className="text-gray-600 hover:text-blue-600">
             Contact
           </Link>
-               <Link href="#contact" className="text-gray-600 hover:text-blue-600">
-            Contact
+          <Link href="#contact" className="text-gray-600 hover:text-blue-600">
+            work
           </Link>
           <Link href="#contact" className="text-gray-600 hover:text-blue-600">
-            Contact
+            blog
           </Link>
         </nav>
 

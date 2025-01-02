@@ -20,7 +20,7 @@ const Hero = () => {
               <h1 className="text-3xl  font-semibold  md:text-5xl lg:text-7xl">
                 Revolutionize Your{" "}
                 <span className="text-blue-700">Workflow </span>With Sass
-              </h1> 
+              </h1>
               <p className="mt-2 text-base text-gray-600 md:text-xl lg:mt-10  ">
                 And in Order To Make A Business , Brand Advertising And
                 Marketing Plays an Important Role Similarly , in Making

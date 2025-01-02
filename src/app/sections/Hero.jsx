@@ -48,23 +48,25 @@ const Hero = () => {
               width={30}
             />
 
-            <div className="peralexeffect">
+            <div className="peralexeffect w-32  md:w-48 h-auto   absolute top-[10%] left-[0] lg:left-[-10%]">
               <Image
                 src="/asset 3.png"
                 width={80}
                 height={100}
                 objectFit="cover"
-                className="absolute top-[10%] left-[0]"
+                layout="responsive"
+                className=""
                 alt="hello world"
               />
             </div>
-            <div className="peralexeffect">
+            <div className="peralexeffect w-32  md:w-48 h-auto lg:w-96   absolute top-[50%] left-[0] md:left-6">
               <Image
                 src="/asset 5.png"
-                width={150}
-                height={500}
+                width={0}
+                height={0}
                 objectFit="cover"
-                className="absolute top-[50%] left-[0]"
+                layout="responsive"
+                className=""
                 alt="hello world"
               />
             </div>

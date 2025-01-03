@@ -16,8 +16,11 @@ const Hero = () => {
                 Designing for the Future
               </Link>
             </div>
-            <div className="contant mt-8  lg:max-w-2xl md:my-[3rem]   items-start text-left">
-              <h1 className="text-3xl  font-semibold  md:text-5xl lg:text-7xl">
+            <div className="contant mt-8  lg:max-w-2xl md:my-[3rem]   items-start text-left  ">
+              <h1
+                className="text-3xl  leading-relaxed   font-semibold  md:text-5xl lg:text-7xl"
+                style={{ lineHeight: "1.1" }}
+              >
                 Revolutionize Your{" "}
                 <span className="text-blue-700">Workflow </span>With Sass
               </h1>

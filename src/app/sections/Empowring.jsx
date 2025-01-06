@@ -8,9 +8,9 @@ const Empowring = () => {
           <img src="/asset 7.png" alt="hello world" />
         </div>
         <div className="contentsection font-medium  ">
-          <h1 className="text-blue-600 text-xl my-[1rem]">ABOUT US</h1>
-          <h2>Empowering business with SaaS technology</h2>
-          <p>
+          <h1 className="text-blue-600 text-lg  lg:font-bold my-[1rem]">ABOUT US</h1>
+          <h2 className="text-4xl font-semibold mb-3 md:text-5xl  ">Empowering business with SaaS technology</h2>
+          <p className="text-base">
             You can access SaaS application through a web browser or mobile app,
             as long as you have an internet connection.
           </p>
@@ -18,26 +18,26 @@ const Empowring = () => {
             <div className="flex items-center space-x-2 my-5 ">
               {" "}
               {/* Flex container with spacing */}
-              <FaRegCheckCircle size={25} className="text-purple-800" />{" "}
+              <FaRegCheckCircle size={25} className="text-blue-800" />{" "}
               {/* Icon with some custom styles */}
               <span className="  ">Continuous integration and deployment</span>
             </div>
             <div className="flex items-center space-x-2  mb-2 my-5">
               {" "}
               {/* Flex container with spacing */}
-              <FaRegCheckCircle size={25} className="text-purple-800" />{" "}
+              <FaRegCheckCircle size={25} className="text-blue-800" />{" "}
               {/* Icon with some custom styles */}
               <span className=" ">Development workflow</span>
             </div>
             <div className="flex items-center space-x-2  mb-2 my-5">
               {" "}
               {/* Flex container with spacing */}
-              <FaRegCheckCircle size={25} className="text-purple-800" />{" "}
+              <FaRegCheckCircle size={25} className="text-blue-800" />{" "}
               {/* Icon with some custom styles */}
               <span className=" ">Knowledge management</span>
             </div>
           </div>
-          <p>
+          <p className="">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
             facilis mollitia sunt ut optio, distinctio quas suscipit aspernatur
             atque nemo provident laboriosam fugit sed consequuntur animi, facere

@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <div className="Hero-section container-fluid h-full w-full">
       <div className="container mx-auto px-5  ">
-        <div className="hero-content  h-screen grid  lg:grid-cols-2 gap-4  place-content-center justify-center lg:pt-10 ">
-          <div className=" rounded-lg mt-8   ">
+        <div className="hero-content  h-screen grid   pt-5 lg:grid-cols-2 gap-4   justify-center  lg:pt-[5rem] ">
+          <div className=" rounded-lg   ">
             <div className="button text-white my-3 ">
               <Link
                 href="#"
@@ -18,7 +18,7 @@ const Hero = () => {
             </div>
             <div className="contant mt-8  lg:max-w-2xl md:my-[3rem]   items-start text-left  ">
               <h1
-                className="text-3xl  leading-relaxed   font-semibold  md:text-5xl lg:text-7xl"
+                className="text-4xl  leading-relaxed   font-semibold  md:text-5xl lg:text-7xl"
                 style={{ lineHeight: "1.1" }}
               >
                 Revolutionize Your{" "}

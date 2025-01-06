@@ -3,16 +3,16 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className=" bg-transparent   w-full z-50 shadow">
+    <header className=" bg-transparent absolute top-0 left-0   w-full z-50 ">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="text-3xl font-bold text-blue-600">MoreDev</div>
+        <div className="text-4xl font-bold text-blue-600">MoreDev</div>
 
-        <nav className="hidden  lg:flex space-x-6 text-xl ">
+        <nav className="hidden  lg:flex space-x-6 text-xl font-semibold ">
           <Link href="#home" className="text-gray-600 hover:text-blue-600">
             Home
           </Link>
-          <Link href="#about" className="text-gray-600 hover:text-blue-600"> 
-            About 
+          <Link href="#about" className="text-gray-600 hover:text-blue-600">
+            About
           </Link>
           <Link href="#services" className="text-gray-600 hover:text-blue-600">
             Services
@@ -29,10 +29,10 @@ const Header = () => {
         </nav>
 
         <Link
-          href="#get-started"
-          className="hidden md:inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+          href="#"
+          className="py-3 px-6 border-2 border-blue-600 font-semibold text-black font-medium rounded-[2rem] hover:text-white hover:bg-blue-600 transition duration-300 mt-3 md:mt-0 "
         >
-          Get Started
+          DiscoverMore +
         </Link>
 
         <div className="md:hidden">

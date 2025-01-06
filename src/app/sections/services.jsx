@@ -9,18 +9,6 @@ const services = () => {
       image: "/webdevelopment.jpg", // Random image from Unsplash
     },
     {
-      title: "Mobile App Development",
-      description:
-        "Building native and cross-platform mobile apps for iOS and Android.",
-      image: "/mobileapp.webp",
-    },
-    {
-      title: "UI/UX Design",
-      description:
-        "Creating intuitive and engaging user interfaces for optimal user experience.",
-      image: "/uiux.webp",
-    },
-    {
       title: "Digital Marketing",
       description:
         "Driving growth and visibility through strategic digital marketing campaigns.",
@@ -33,6 +21,19 @@ const services = () => {
       image: "/cloudsolution.jpg",
     },
     {
+      title: "Mobile App Development",
+      description:
+        "Building native and cross-platform mobile apps for iOS and Android.",
+      image: "/mobileapp.webp",
+    },
+    {
+      title: "UI/UX Design",
+      description:
+        "Creating intuitive and engaging user interfaces for optimal user experience.",
+      image: "/uiux.webp",
+    },
+
+    {
       title: "Cybersecurity",
       description:
         "Protecting your digital assets with robust cybersecurity measures.",
@@ -43,11 +44,11 @@ const services = () => {
   return (
     <div className="services-section bg-gradient-to-b from-blue-50 to-blue-100 py-12">
       <div className="container px-5 mx-auto">
-        <div className="content max-w-3xl mx-auto text-center mb-10">
-          <h4 className="font-semibold text-xl text-blue-700 md:text-2xl lg:text-3xl">
+        <div className="content mx-auto text-center mb-10">
+          <h4 className="font-semibold text-2xl text-blue-700 md:text-2xl lg:text-3xl">
             Advance Services
           </h4>
-          <h1 className="font-bold text-xl md:text-2xl lg:text-5xl my-2 lg:my-5">
+          <h1 className="font-bold text-3xl md:text-2xl lg:text-5xl my-2 lg:my-5">
             Optimize Your <span className="text-blue-700">Performance</span>
           </h1>
         </div>
@@ -55,7 +56,7 @@ const services = () => {
           {serviceData.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md hover:scale-105 transition-transform duration-300 transform hover:shadow-lg overflow-hidden" // Added overflow-hidden
+              className="bg-white rounded-[1.5rem] shadow-md hover:scale-105 transition-transform duration-300 transform hover:shadow-lg overflow-hidden" // Added overflow-hidden
               style={{
                 animationDelay: `${index * 0.15}s`,
                 animationName: "fadeIn",
@@ -67,7 +68,7 @@ const services = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-48 object-cover rounded-t-lg" // Image styling
+                className="w-full h-92 object-contain rounded-t-lg" // Image styling
                 loading="lazy"
               />
               <div className="p-6">

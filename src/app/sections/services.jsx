@@ -45,10 +45,10 @@ const services = () => {
     <div className="services-section bg-gradient-to-b from-blue-50 to-blue-100 py-12">
       <div className="container px-5 mx-auto">
         <div className="content mx-auto text-center mb-10">
-          <h4 className="font-semibold text-2xl text-blue-700 md:text-2xl lg:text-3xl">
+          <h4 className="font-semibold text-xl text-blue-700 md:text-2xl lg:text-3xl">
             Advance Services
           </h4>
-          <h1 className="font-bold text-3xl md:text-2xl lg:text-5xl my-2 lg:my-5">
+          <h1 className="font-bold text-2xl md:text-2xl lg:text-5xl my-2 lg:my-5">
             Optimize Your <span className="text-blue-700">Performance</span>
           </h1>
         </div>

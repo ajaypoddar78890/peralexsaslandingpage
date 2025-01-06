@@ -1,6 +1,5 @@
 import { FaRegCheckCircle } from "react-icons/fa";
-import react from "react";
-import Image from "next/image";
+import Link from "next/link";
 const Empowring = () => {
   return (
     <div className="empowring-section container mx-auto px-5">
@@ -37,6 +36,20 @@ const Empowring = () => {
               {/* Icon with some custom styles */}
               <span className=" ">Knowledge management</span>
             </div>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+            facilis mollitia sunt ut optio, distinctio quas suscipit aspernatur
+            atque nemo provident laboriosam fugit sed consequuntur animi, facere
+            aliquam natus dolores.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-start gap-4 items-start">
+            <Link
+              href="#"
+              className="py-3 px-6 border-2 border-blue-600 text-black font-medium rounded-[2rem] hover:text-white hover:bg-blue-600 transition duration-300 mt-3 md:mt-0 "
+            >
+              DiscoverMore +
+            </Link>
           </div>
         </div>
       </div>

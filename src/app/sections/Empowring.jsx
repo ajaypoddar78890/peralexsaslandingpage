@@ -7,8 +7,8 @@ const Empowring = () => {
         <div className="w-full h-auto">
           <img src="/asset 7.png" alt="hello world" />
         </div>
-        <div className="contentsection">
-          <h1>ABOUT US</h1>
+        <div className="contentsection font-medium  ">
+          <h1 className="text-blue-600 text-xl my-[1rem]">ABOUT US</h1>
           <h2>Empowering business with SaaS technology</h2>
           <p>
             You can access SaaS application through a web browser or mobile app,

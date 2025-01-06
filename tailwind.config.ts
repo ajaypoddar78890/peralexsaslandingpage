@@ -15,7 +15,6 @@ export default {
         background: "",
         foreground: "var(--foreground)",
       },
-    
     },
   },
   plugins: [],

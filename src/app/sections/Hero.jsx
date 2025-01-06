@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className="Hero-section container-fluid h-full w-full">
       <div className="container mx-auto px-5  ">
-        <div className="hero-content  h-screen grid   pt-5 lg:grid-cols-2 gap-4   justify-center  lg:pt-[5rem] ">
-          <div className=" rounded-lg   ">
-            <div className="button text-white my-3 ">
+        <div className="hero-content  h-screen grid   pt-5 lg:grid-cols-2 gap-4   justify-center  place-content-center lg:pt-[5rem] ">
+          <div className=" rounded-lg  place-content-center  ">
+            <div className="button text-white   ">
               <Link
                 href="#"
                 className="bg-white  text-gray-600 font-regular px-5 py-3 rounded-[50px] shadow-md   hover:shadow-lg transition-all duration-300 lg:mt-[2rem]"

@@ -2,92 +2,83 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div>
-      <section className="bg-white">
-        <div className="py-4 px-2 mx-auto  container sm:py-4 lg:px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
-            <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
-              <a
-                href="#"
-                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Wines
-                </h3>
-              </a>
+    <section id="testimonies" className="py-20 bg-slate-900">
+      <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
+        {/* Header */}
+        <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
+          <div className="mb-12 space-y-5 md:mb-16 md:text-center">
+            <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
+              Words from Others
             </div>
-            <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
-              <a
-                href="#"
-                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Gin
-                </h3>
-              </a>
-              <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
-                <a
-                  href="#"
-                  className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                    Whiskey
-                  </h3>
-                </a>
-                <a
-                  href="#"
-                  className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
-                >
-                  <img
-                    src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt=""
-                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                    Vodka
-                  </h3>
-                </a>
-              </div>
-            </div>
-            <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
-              <a
-                href="#"
-                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
-              >
-                <img
-                  src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt=""
-                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
-                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
-                  Brandy
-                </h3>
-              </a>
-            </div>
+            <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
+              It's not just us.
+            </h1>
+            <p className="text-xl text-gray-100 md:text-center md:text-2xl">
+              Here's what others have to say about us.
+            </p>
           </div>
         </div>
-      </section>
-    </div>
+
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+          {/* Single Testimonial */}
+          {[
+            {
+              name: "Kanye West",
+              role: "Rapper & Entrepreneur",
+              message: "Find God.",
+              image:
+                "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
+              link: "https://twitter.com/kanyewest",
+            },
+            {
+              name: "Tim Cook",
+              role: "CEO of Apple",
+              message:
+                "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.",
+              image:
+                "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
+              link: "https://twitter.com/tim_cook",
+            },
+            {
+              name: "Parag Agrawal",
+              role: "CEO of Twitter",
+              message:
+                "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus.",
+              image:
+                "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
+              link: "https://twitter.com/paraga",
+            },
+          ].map((testimonial, index) => (
+            <div key={index} className="relative group">
+              <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
+              <a href={testimonial.link} className="cursor-pointer">
+                <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                  <div className="flex items-center space-x-4">
+                    <img
+                      src={testimonial.image}
+                      className="w-12 h-12 bg-center bg-cover border rounded-full"
+                      alt={testimonial.name}
+                    />
+                    <div>
+                      <h3 className="text-lg font-semibold text-white">
+                        {testimonial.name}
+                      </h3>
+                      <p className="text-gray-500 text-md">
+                        {testimonial.role}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="leading-normal text-gray-300 text-md">
+                    {testimonial.message}
+                  </p>
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

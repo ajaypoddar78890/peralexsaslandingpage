@@ -68,7 +68,7 @@ const services = () => {
               <img
                 src={service.image}
                 alt={service.title}
-                className="w-full h-92 object-contain rounded-t-lg" // Image styling
+                className="w-full h-92 object-contain rounded-t-lg"
                 loading="lazy"
               />
               <div className="p-6">

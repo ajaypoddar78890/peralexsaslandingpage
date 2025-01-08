@@ -3,6 +3,7 @@ import Hero from "./sections/Hero";
 import Empowering from "./sections/Empowring";
 import Services from "./sections/services";
 import Clientlogo from "./sections/Clientlogo";
+import Teams from "./sections/Teams"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Empowering />
       <Services />
       <Clientlogo />
+      <Teams />
     </div>
   );
 }

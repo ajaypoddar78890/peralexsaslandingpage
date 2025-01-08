@@ -1,70 +1,94 @@
-"use client";
+import React from "react";
 
-import Image from "next/image";
-import Link from "next/link";
-import { useState, useEffect } from "react";
-
-const blogs = [
-  {
-    id: 1,
-    title: "This is bento grid in vercel blog",
-    author: "Michael Jordan",
-    date: "12.10.1999",
-    image:
-      "/heroimg.png ",
-    // avatar: "https://i.pravatar.cc/150?img=1",
-    link: "/",
-  },
-];
-
-export default function SolidBento() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
+const Blog = () => {
   return (
-    <div className="grid max-h-screen h-auto p-4 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-4">
-      {blogs.map((blog, index) => (
-        <Link
-          key={blog.id}
-          href={blog.link}
-          className={`group relative flex overflow-hidden rounded-2xl  transition-all duration-300 hover:scale-[1.02] ${
-            index === 0
-              ? "md:col-span-2 md:row-span-2"
-              : index === 1
-              ? "md:col-span-1 md:row-span-1"
-              : "md:col-span-1 md:row-span-1 lg:row-span-2"
-          }`}
-        >
-          <Image
-            src={blog.image}
-            alt={blog.title}
-            fill
-            className="transition-all duration-300 group-hover:scale-110 group-hover:opacity-50 object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-          <div className="relative flex h-full w-full flex-col justify-end p-6 text-white">
-            <h2 className="mb-2 text-2xl font-bold leading-tight">
-              {blog.title}
-            </h2>
-            <div className="flex items-center space-x-2">
-              <Image
-                src={blog.avatar}
-                alt={blog.author}
-                width={32}
-                height={32}
-                className="rounded-full"
-              />
-              <span className="text-sm font-medium">{blog.author}</span>
-              <span className="text-xs text-gray-300">{blog.date}</span>
+    <div>
+      <section className="bg-white">
+        <div className="py-4 px-2 mx-auto  container sm:py-4 lg:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+            <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 h-auto md:h-full flex flex-col">
+              <a
+                href="#"
+                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Wines
+                </h3>
+              </a>
+            </div>
+            <div className="col-span-2 sm:col-span-1 md:col-span-2 bg-stone-50">
+              <a
+                href="#"
+                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 mb-4"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1504675099198-7023dd85f5a3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Gin
+                </h3>
+              </a>
+              <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
+                <a
+                  href="#"
+                  className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1571104508999-893933ded431?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                    Whiskey
+                  </h3>
+                </a>
+                <a
+                  href="#"
+                  className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1626897505254-e0f811aa9bf7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                  <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                    Vodka
+                  </h3>
+                </a>
+              </div>
+            </div>
+            <div className="col-span-2 sm:col-span-1 md:col-span-1 bg-sky-50 h-auto md:h-full flex flex-col">
+              <a
+                href="#"
+                className="group relative flex flex-col overflow-hidden rounded-lg px-4 pb-4 pt-40 flex-grow"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1693680501357-a342180f1946?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
+                />
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-900/25 to-gray-900/5"></div>
+                <h3 className="z-10 text-2xl font-medium text-white absolute top-0 left-0 p-4 xs:text-xl md:text-3xl">
+                  Brandy
+                </h3>
+              </a>
             </div>
           </div>
-        </Link>
-      ))}
+        </div>
+      </section>
     </div>
   );
-}
+};
+
+export default Blog;

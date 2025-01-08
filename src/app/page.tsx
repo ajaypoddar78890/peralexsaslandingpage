@@ -5,7 +5,7 @@ import Services from "./sections/services";
 import Clientlogo from "./sections/Clientlogo";
 import Teams from "./sections/Teams";
 import Calltoaction from "./sections/Calltoaction";
-import Tabs from "./sections/tabs";
+ 
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Clientlogo />
       <Teams />
       <Calltoaction />
-      <Tabs />
+     
     </div>
   );
 }

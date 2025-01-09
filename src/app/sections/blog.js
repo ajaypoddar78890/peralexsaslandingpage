@@ -10,7 +10,7 @@ const Blog = () => {
               Words from Others
             </div>
             <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-              It s not just us.
+              It s not just us
             </h1>
             <p className="text-xl text-gray-100 md:text-center md:text-2xl">
               Here s what others have to say about us.
@@ -28,7 +28,6 @@ const Blog = () => {
               message: "Find God.",
               image:
                 "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
-              link: "https://twitter.com/kanyewest",
             },
             {
               name: "Tim Cook",
@@ -37,7 +36,6 @@ const Blog = () => {
                 "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.",
               image:
                 "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
-              link: "https://twitter.com/tim_cook",
             },
             {
               name: "Parag Agrawal",
@@ -46,7 +44,29 @@ const Blog = () => {
                 "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus.",
               image:
                 "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
-              link: "https://twitter.com/paraga",
+            },
+            {
+              name: "Kanye West",
+              role: "Rapper & Entrepreneur",
+              message: "Find God.",
+              image:
+                "https://pbs.twimg.com/profile_images/1276461929934942210/cqNhNk6v_400x400.jpg",
+            },
+            {
+              name: "Tim Cook",
+              role: "CEO of Apple",
+              message:
+                "Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.",
+              image:
+                "https://pbs.twimg.com/profile_images/1535420431766671360/Pwq-1eJc_400x400.jpg",
+            },
+            {
+              name: "Parag Agrawal",
+              role: "CEO of Twitter",
+              message:
+                "Enim neque volutpat ac tincidunt vitae semper. Mattis aliquam faucibus purus.",
+              image:
+                "https://pbs.twimg.com/profile_images/1375285353146327052/y6jeByyD_400x400.jpg",
             },
           ].map((testimonial, index) => (
             <div key={index} className="relative group  ">

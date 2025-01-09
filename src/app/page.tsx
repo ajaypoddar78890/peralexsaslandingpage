@@ -16,8 +16,8 @@ export default function Home() {
       <Services />
       <Clientlogo />
       <Teams />
-      <Calltoaction />
       <Blog />
+      <Calltoaction />
     </div>
   );
 }

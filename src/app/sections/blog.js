@@ -4,17 +4,16 @@ const Blog = () => {
   return (
     <section id="testimonies" className="py-20 bg-slate-900">
       <div className="max-w-6xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
-        {/* Header */}
         <div className="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
           <div className="mb-12 space-y-5 md:mb-16 md:text-center">
             <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
               Words from Others
             </div>
             <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
-              It's not just us.
+              It s not just us.
             </h1>
             <p className="text-xl text-gray-100 md:text-center md:text-2xl">
-              Here's what others have to say about us.
+              Here s what others have to say about us.
             </p>
           </div>
         </div>
@@ -50,10 +49,10 @@ const Blog = () => {
               link: "https://twitter.com/paraga",
             },
           ].map((testimonial, index) => (
-            <div key={index} className="relative group">
-              <div className="absolute transition rounded-lg opacity-25 -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 blur duration-400 group-hover:opacity-100 group-hover:duration-200"></div>
+            <div key={index} className="relative group  ">
+              <div className="absolute h-full transition rounded-lg opacity-25 -inset-1 bg-gradient-to-tr from-blue-300 to-orange-400 blur duration-400 group-hover:opacity-100 group-hover:duration-200 "></div>
               <a href={testimonial.link} className="cursor-pointer">
-                <div className="relative p-6 space-y-6 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
+                <div className="relative p-6 space-y-6 min-h-72 leading-none rounded-lg bg-slate-800 ring-1 ring-gray-900/5">
                   <div className="flex items-center space-x-4">
                     <img
                       src={testimonial.image}
@@ -70,8 +69,18 @@ const Blog = () => {
                     </div>
                   </div>
                   <p className="leading-normal text-gray-300 text-md">
-                    {testimonial.message}
+                    {testimonial.message.length > 100
+                      ? `${testimonial.message.slice(0, 100)}...`
+                      : testimonial.message}
                   </p>
+                  {testimonial.message.length > 100 && (
+                    <button
+                      onClick={() => setShowMore(!showMore)}
+                      className="text-blue-400 underline text-sm"
+                    >
+                      {showMore ? "Read Less" : "Read More"}
+                    </button>
+                  )}
                 </div>
               </a>
             </div>

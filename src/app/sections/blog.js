@@ -9,7 +9,8 @@ const Blog = () => {
             <div className="inline-block px-3 py-1 text-sm font-semibold text-indigo-100 rounded-lg md:text-center text-cn bg-[#202c47] bg-opacity-60 hover:cursor-pointer hover:bg-opacity-40">
               Words from Others
             </div>
-            <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl ">
+            <h1 className="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl 
+            ">
               It s not just us
             </h1>
             <p className="text-xl text-gray-100 md:text-center md:text-2xl">
